@@ -1,0 +1,15 @@
+login: &login
+  adapter: mysql2
+  host: 127.0.0.1
+  username: root
+  encoding: utf8
+  reconnect: false
+  pool: 5
+
+development:
+  database: muni_notifier_dev
+  <<: *login
+
+test:
+  database: muni_notifier_test
+  <<: *login

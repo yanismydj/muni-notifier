@@ -1,0 +1,3 @@
+== Next Muni Notifier
+
+The server side for the next muni notifier, which will tell you when you need to leave work to catch your muni bus!
