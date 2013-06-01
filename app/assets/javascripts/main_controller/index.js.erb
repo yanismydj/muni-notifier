@@ -1,0 +1,10 @@
+<% environment.context_class.instance_eval { include Rails.application.routes.url_helpers } %>
+$("#next-button").click(
+  function() {
+    $.get('#{step2_path}', function(data) {
+      $('#muni-steps').html(data);
+    });
+
+    return false;
+  }
+);

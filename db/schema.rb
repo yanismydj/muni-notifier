@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130529024231) do
+ActiveRecord::Schema.define(version: 20130529064825) do
+
+  create_table "routes", force: true do |t|
+    t.string   "tag"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                              default: "", null: false
